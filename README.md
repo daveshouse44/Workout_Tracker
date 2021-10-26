@@ -27,7 +27,7 @@ Reach fitness goals more quickly by tracking one's workout progress!
 
 ## Screenshot
 
-![Image of functional application]() 
+![Image of functional application](public\assets\images\main-page.png) 
 
 ![Image of dashboard in application]() 
 
