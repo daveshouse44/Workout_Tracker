@@ -25,5 +25,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Route to add to most recently created workout and exercise
+router.put("/:id", async ({ params, body }, res) => {
+  console.log(body);
+  try {
+    const updateWorkout = await Workout.findByIdAndUpdate(
+      params.id,
+      { $push: { exercises: body } },
+      { new: true }
+    );
+    res.json(updateWorkout);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
