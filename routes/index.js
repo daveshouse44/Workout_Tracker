@@ -1,6 +1,6 @@
 const router = require("express").Router();
 // Adding views and API routes
-const apiRoutes = require("./api/api");
+const apiRoutes = require("./api");
 const views = require("./views");
 
 router.use("/api", apiRoutes);
