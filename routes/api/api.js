@@ -40,4 +40,19 @@ router.put("/:id", async ({ params, body }, res) => {
   }
 });
 
+// Route to get stats for workout duration, math for exercise duration time
+router.get("/range", async (req, res) => {
+  console.log(res, "get duration");
+  try {
+    const workouts = await Workout.aggregate([
+      {
+        $addFields: { totalDuration: { $sum: "$exercises.duration" } },
+      },
+    ]);
+    res.status(200).json(workouts);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
