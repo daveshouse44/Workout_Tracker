@@ -27,9 +27,11 @@ Reach fitness goals more quickly by tracking one's workout progress!
 
 ## Screenshot
 
-![Image of functional application](public/assets/images/main-page.png) 
+![Image of main page application](public/assets/images/main-page.png) 
 
-![Image of dashboard in application]() 
+![Image of stat page in application](public/assets/images/stat-page.png)
+
+![Image of add workout in application](public/assets/images/add-exercise.png)
 
 
 ## Technologies-Used
